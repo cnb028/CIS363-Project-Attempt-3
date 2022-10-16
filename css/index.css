@@ -54,8 +54,31 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
     transition: 0.3s;
 }
 
+/*Hovering on a link changes the colors*/
 .sidenav a:hover{
     background-color: #D5BDD6;
     color: black;
 }
+
+/*Active Page changes Font Style*/
+.sidenav a:active {
+    font-style:italic;
+    font-weight:200px;
+}
+
+/*Position and Style the Close button*/
+
+.sidenav .closebtn {
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
 
