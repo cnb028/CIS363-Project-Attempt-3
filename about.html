@@ -8,10 +8,15 @@
         <title>Christine Bettencourt Eportfolio</title>
 
         <!--CSS-->
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/slideshow.css">
+        <link rel="stylesheet" href="css/table.css">
 
         <!--Javascript-->
-        <script src="js/index.js"></script>
+        <script src="js/menu.js"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
 
     </head>
@@ -23,13 +28,15 @@
             <header>
                 <h1>Christine Bettencourt's Eportfolio</h1>
             </header>
+            <!--Search Bar-->
+            <div id="search">
+                <input type="text" placeholder="Search..">
+            </div>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="">Education</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact Me</a>
-            <a href="">Bouncing Bunny Studios</a>
+            <a href="index.html">Home</a>
+            <a href="about.html"class="active">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="http://bouncingbunnystudios.infinityfreeapp.com/WebDesign/module4/index.html">Bouncing Bunny Studios</a>
         </div>
 
         <button onclick="openNav()">Menu</button>
@@ -38,7 +45,7 @@
 
             <div class="wrapper">
 
-                <section id="me">
+                <section id="aboutme">
                     <h2>About Me</h2>
                     <div id="para">
                         <p>
@@ -66,28 +73,114 @@
 
                 <section id="skills"> <!--Table-->
                     <h2>Skills:</h2>
+                    <div id="para">
+                        <table>
+                            <tr>
+                                <th>Soft Skills</th>
+                                <th>Hard Skills</th>
+                            </tr>
+                            <tr>
+                                <td>Adaptability</td>
+                                <td>Microsoft Office Suite</td>
+                            </tr>
+                            <tr>
+                                <td>Problem-Solving</td>                          
+                                <td>Web Development</td>
+                            </tr>
+                            <tr>
+                                <td>Communication</td>
+                                <td>C++ and .Net Programming</td>
+                            </tr>
+                            <tr>
+                                <td>Teamwork</td>
+                                <td>ServiceNow</td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
 
                 <section id="inspire"> <!--Slideshow-->
                     <h2>What Inspires Me:</h2>
 
-                    <div class="slideshow-container">
+                    <div id="para">
+                        <div class="slideshow-container">
 
+                            <div class="mySlides fade">
+                                <img src="images/drew.jpg">
+                              </div>
+
+                            <div class="mySlides fade">
+                              <img src="images/len.jpg">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <img src="images/whisper.jpg" >
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <img src="images/lucifer.jpg" >
+                            </div>
+                            
+                        </div>
+                        <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span> 
+                              <span class="dot"></span>
+                            </div>
                     </div>
                 </section>
                 
                 <section id="contact">
                     <h2>Contact Me:</h2>
+                        <div class="para">
+                            <div class="container">
+                                <form action="javascript:alert(this === window);">
+
+                                    <label for="fname">First Name:</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+
+                                    <label for="lname">Last Name:</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+                                    <br>
+
+                                    <label for="subject">Subject:</label><br>
+                                    <textarea id="subject" name="subject" placeholder="What can I assist you with today?"></textarea>
+                                    
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </div>
+                        </div>
                 </section>
         </div>
+        <footer>
+            <!--Copyright, Name, Est.-->
+            <h3><a href="copyright.html">Copyright Christine Bettencourt 2022</a></h3>
+        </footer>
     </div>
 
-    <footer>
-        <!--Search Bar-->
-        <input type="text" placeholder="Search..">
-        <!--Copyright, Name, Est.-->
-        <a href="">Copyright Christine Bettencourt 2022</a>
-    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>

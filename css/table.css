@@ -1,0 +1,22 @@
+/*Site colors
+Pastel Pink: #D5BDD6
+Mint Green: #A9eed1
+Cream: #FFFDD0
+Laveder: #9AA4FF*/
+
+
+
+table {
+    padding-left: 25%;
+    text-align: center;
+}
+
+table th {
+    border: 5px solid;
+    border-style: thick;
+    border-color: #D5BDD6;
+    padding: 2%;
+}
+table td {
+    padding: 4%;
+}
