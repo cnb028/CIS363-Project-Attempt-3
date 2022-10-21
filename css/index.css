@@ -88,7 +88,7 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
 /*Position and Style the Close button*/
 
 button{
-    border-radius: 50%;
+    border-radius: 100%;
     border-color: #FFFDD0;
     border-style: thick;
     border-style: solid;
@@ -100,7 +100,7 @@ button{
     background-size:cover;
     background-position: center;
     width: 14%;
-    height: 14%;
+    height: 10%;
     color:#A9eed1;
     -webkit-text-stroke-color: #FFFDD0;
     -webkit-text-stroke-width: 0.5px;
@@ -117,23 +117,36 @@ button{
     margin-left:10px;
 }
 
+.sidenav #search {
+    text-align: center;
+}
+
+.sidenav input[type=text] {
+    border: solid thick #D5BDD6;
+    width: 50%;
+    height: 2%;
+    margin: 1%;
+    text-align:center;
+    border-radius: 25px;
+  }
+
 /*Content*/
 
 .main {
     transition: margin-left .5s;
     background-color: #D5BDD6;
     width: 100%;
+    height: 100%;
 }
 
 
 .main .wrapper{
     width: 75%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .main .wrapper section {
-    padding: 20px;
-    margin-bottom: 2%;
     margin-left: 7%;
     background-color: #A9eed1;
     border-radius(4px);
@@ -142,6 +155,7 @@ button{
     border-color: #FFFDD0;
     border-style: solid;
     border-width: thick;
+    padding: 20px;
   }
 
   .main .wrapper section h2 {
@@ -158,13 +172,12 @@ button{
 
   .main .wrapper section #para {
     background-color:#9aa4ff;
-    padding: 10px;
     color: #FFFDD0;
     text-align: left;
     font-size:2vw;
     font-style: italic;
     font-style: bold;
-    padding: 10px;
+    padding: 2%;
     border-radius: 25px;
   }
 
@@ -174,4 +187,31 @@ button{
     margin-right: auto;
     width:50%;
     height: 50%;
+  }
+
+  .main .wrapper #oct2222 {
+    margin-bottom: 5%;
+  }
+
+  .main .wrapper #aug2222 {
+    margin-bottom: 5%;
+  }
+
+  .main .wrapper #aug1822 {
+    margin-bottom: 5%;
+  }
+
+ .main footer {
+    background-color:#A9eed1;
+    border: 3px solid #FFFDD0;
+    border-radius: 225% 225% 0% 0%;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+    text-align:center;
+  }
+
+  .main footer h3{
+    margin: 1%;
+    font-size: 75% ;
   }

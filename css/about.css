@@ -123,6 +123,7 @@ button{
     transition: margin-left .5s;
     background-color: #D5BDD6;
     width: 100%;
+    height: 100%;
 }
 
 
@@ -133,7 +134,6 @@ button{
 
 .main .wrapper section {
     padding: 20px;
-    margin-bottom: 2%;
     margin-left: 7%;
     background-color: #A9eed1;
     border-radius(4px);
@@ -167,6 +167,7 @@ button{
     padding: 10px;
     border-radius: 25px;
   }
+  .
 
   .main .wrapper section img {
     display: block;
