@@ -48,7 +48,7 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
 
 .sidenav header {
     margin-bottom: 2%;
-    margin-left: 15%;
+    margin-left: 12%;
     background-color: #A9eed1;
     border-radius: 75px;
     border-color: #FFFDD0;
@@ -99,7 +99,7 @@ button{
     margin: 2%;
     background-size:cover;
     background-position: center;
-    width: 14%;
+    width: 10%;
     height: 10%;
     color:#A9eed1;
     -webkit-text-stroke-color: #FFFDD0;
@@ -203,7 +203,9 @@ button{
 
  .main footer {
     background-color:#A9eed1;
-    border: 3px solid #FFFDD0;
+    border: 3px solid;
+    border-style:thick;
+    border-color: #FFFDD0;
     border-radius: 225% 225% 0% 0%;
     width: 50%;
     height: 100%;
@@ -212,6 +214,6 @@ button{
   }
 
   .main footer h3{
-    margin: 1%;
-    font-size: 75% ;
+    padding: 1%;
+    font-size: 60%;
   }
