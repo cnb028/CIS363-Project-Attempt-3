@@ -56,6 +56,7 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
     border-style: solid;
     border-width: thick;
     padding: 20px;
+    margin-bottom: 5%;
   }
 
   .main .wrapper section h2 {
@@ -87,18 +88,6 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
     margin-right: auto;
     width: 25%;
     height: 25%;
-  }
-
-  .main .wrapper #oct2222 {
-    margin-bottom: 5%;
-  }
-
-  .main .wrapper #aug2222 {
-    margin-bottom: 5%;
-  }
-
-  .main .wrapper #aug1822 {
-    margin-bottom: 5%;
   }
 
  .main footer {
