@@ -14,11 +14,18 @@
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/slideshow.css">
         <link rel="stylesheet" href="css/table.css">
+        
 
         <!--Javascript-->
         <script src="js/menu.js"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
-
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("feeds", "1");
+        </script>
+        <script type="text/javascript">
+            google.setOnLoadCallback(initialize);
+        </script>
     </head>
 
     <body>
@@ -33,10 +40,22 @@
                 <input type="text" placeholder="Search..">
             </div>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
-            <a href="index.html">Home</a>
-            <a href="about.html"class="active">About</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="http://bouncingbunnystudios.infinityfreeapp.com/WebDesign/module4/index.html">Bouncing Bunny Studios</a>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div id="twitter">
+                <a class="twitter-timeline" href="https://twitter.com/cnb5995?ref_src=twsrc%5Etfw">Tweets by cnb5995</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div>
+                <a class="github" href="https://github.com/cnb028"><img src="images/github.png" /></a>
+            </div>
         </div>
 
         <button onclick="openNav()">Menu</button>
@@ -154,12 +173,12 @@
                             </div>
                         </div>
                 </section>
+            </div>
+            <footer>
+                <!--Copyright, Name, Est.-->
+                <h3><a href="copyright.html">Copyright Christine Bettencourt 2022</a></h3>
+            </footer>
         </div>
-        <footer>
-            <!--Copyright, Name, Est.-->
-            <h3><a href="copyright.html">Copyright Christine Bettencourt 2022</a></h3>
-        </footer>
-    </div>
 
     <script>
         let slideIndex = 0;
