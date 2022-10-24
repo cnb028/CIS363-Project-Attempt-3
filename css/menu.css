@@ -63,17 +63,14 @@ button{
     background-color: #9aa4ff;
     background-image: url(me.jpg);
     float: left;
-    padding: 5%;
+    padding: 2%;
     margin: 2%;
     background-size:cover;
     background-position: center;
-    width: 10%;
-    height: 10%;
     color:#A9eed1;
     -webkit-text-stroke-color: #FFFDD0;
     -webkit-text-stroke-width: 0.5px;
-    text-align: center;
-    font-size: 60%;
+    font-size: 2vw;
 }
 
 
